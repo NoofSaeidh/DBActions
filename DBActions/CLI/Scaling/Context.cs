@@ -10,7 +10,6 @@ namespace DBActions.CLI.Scaling
     {
         public string Name { get; set; }
         public KeyAction[] KeyActions { get; set; }
-        public KeyAction[] ParentKeyActions { get; set; }
         public Context Parent { get; set; }
         public Context()
         {

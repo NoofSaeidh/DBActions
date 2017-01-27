@@ -10,22 +10,22 @@ namespace DBActions.CLI
     {
         private ConsoleColor color = ConsoleColor.DarkMagenta;
         private CLIExtensions.ColorGroundType groundType = CLIExtensions.ColorGroundType.Foreground;
-        private Contexts context = new Contexts();
-        private InContext current;
+        private _oldContexts context = new _oldContexts();
+        private _oldInContext current;
         public Config.Config Config { get; private set; }
         public DBCLI(Config.Config config)
         {
             CLIExtensions.DefaultColor = color;
             CLIExtensions.DefaultGroundType = groundType;
             Config = config;
-            Console.Title = Contexts.Messages.TITLE;
+            Console.Title = _oldContexts.Messages.TITLE;
 
 
-            current = context[Contexts.Context.Global];
+            current = context[_oldContexts.Context.Global];
             current.Print();
             Console.WriteLine();
 
-            current = context[Contexts.Context.Main];
+            current = context[_oldContexts.Context.Main];
             current.Print(false);
             while (true)
             {
@@ -33,22 +33,22 @@ namespace DBActions.CLI
                 var action = current.ActionFromKey(key);
                 switch (action)
                 {
-                    case Contexts.Action.ClearScreen:
+                    case _oldContexts.Action.ClearScreen:
                         ClearScreen();
                         break;
-                    case Contexts.Action.CreateBackup:
+                    case _oldContexts.Action.CreateBackup:
                         CreateBackup();
                         break;
-                    case Contexts.Action.RestoreBackup:
+                    case _oldContexts.Action.RestoreBackup:
                         RestoreBackup();
                         break;
-                    case Contexts.Action.GoToMain:
+                    case _oldContexts.Action.GoToMain:
                         GoToMain();
                         break;
-                    case Contexts.Action.PreviosContext:
+                    case _oldContexts.Action.PreviosContext:
                         PreviosContext();
                         break;
-                    case Contexts.Action.Quit:
+                    case _oldContexts.Action.Quit:
                         Quit();
                         break;
                     default:

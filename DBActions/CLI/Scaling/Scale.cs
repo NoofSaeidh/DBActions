@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DBActions.CLI.Scaling
 {
-    class Scale
+    class Scale : List<Context>
     {
+
+
+
     }
 }
