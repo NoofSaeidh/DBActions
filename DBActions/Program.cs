@@ -18,7 +18,7 @@ namespace DBActions
     {
         static void Main(string[] args)
         {
-            var pathToConfig = Environment.CurrentDirectory + "\\Config\\Config.xml";
+            var pathToConfig = Environment.CurrentDirectory + "\\Configuration\\Config.xml";
             var config = Config.ReadConfig(pathToConfig);
             var cli = new DBCLI(config);
         }

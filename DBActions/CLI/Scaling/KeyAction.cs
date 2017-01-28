@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DBActions.CLI.Hardcode;
 
 namespace DBActions.CLI.Scaling
 {
     class KeyAction
     {
-        public string Name { get; set; }
+        public string Text { get; set; }
         public ConsoleKey Key { get; set; }
         public Action Action { get; set; }
-        public KeyAction(string name, ConsoleKey key, Action action)
+        public KeyAction(string text, ConsoleKey key, Action action, bool markText = true)
         {
-            Name = name;
+            Text = markText?text.MarkLetter(key):text;
             Action = action;
             Key = key;
         }
@@ -22,17 +23,4 @@ namespace DBActions.CLI.Scaling
 
         }
     }
-    class ParentKeyAction : KeyAction
-    {
-        public Context Parent { get; set; }
-        public ParentKeyAction()
-        {
-
-        }
-        public ParentKeyAction(string name, ConsoleKey key, Action action, Context parent) : base(name, key, action)
-        {
-            Parent = parent;
-        }
-    }
-
 }
