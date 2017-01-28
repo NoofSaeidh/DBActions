@@ -17,6 +17,11 @@ namespace DBActions.CLI
             {
                 { Names.Contexts.Main, null }
             };
+            Scale.Add(Names.Contexts.Global, null, new KeyAction[]
+            {
+                new KeyAction(Names.Actions.ClearScreen,ConsoleKey.C,Actions.ClearScreen),
+                new KeyAction(Names.Actions.Quit,ConsoleKey.Q,Actions.Quit)
+            });
         }
     }
 }

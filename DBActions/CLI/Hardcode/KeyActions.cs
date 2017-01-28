@@ -14,7 +14,7 @@ namespace DBActions.CLI.Hardcode
 
         static KeyActions()
         {
-            RestoreBackup = new KeyAction(Names.Actions.RestoreBackup, ConsoleKey.R, null);
+            RestoreBackup = new KeyAction(Names.Actions.RestoreBackup, ConsoleKey.R, Actions.GoBack);
             ClearScreen = new KeyAction(Names.Actions.ClearScreen, ConsoleKey.C, null);
         }
     }

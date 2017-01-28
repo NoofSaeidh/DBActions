@@ -12,6 +12,7 @@ namespace DBActions.CLI.Hardcode
         {
             public const string Global = "Global";
             public const string Main = "Main";
+            public const string Config = "Config";
         }
         public static class Actions
         {
@@ -20,6 +21,8 @@ namespace DBActions.CLI.Hardcode
             public const string ReadConfig = "Read Config";
             public const string SaveConfig = "Save Config";
             public const string ClearScreen = "Clear Screen";
+            public const string Quit = "Quit";
+            public const string GoBack = "Go Back";
 
         }
 

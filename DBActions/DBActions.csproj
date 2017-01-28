@@ -45,7 +45,7 @@
     <Compile Include="CLI\CLIScales.cs" />
     <Compile Include="CLI\DBCLI.cs" />
     <Compile Include="CLI\CLIExtensions.cs" />
-    <Compile Include="CLI\Hardcode\Actions.cs" />
+    <Compile Include="CLI\Actions.cs" />
     <Compile Include="CLI\Hardcode\Highlight.cs" />
     <Compile Include="CLI\Hardcode\KeyActions.cs" />
     <Compile Include="CLI\Scaling\Context.cs" />

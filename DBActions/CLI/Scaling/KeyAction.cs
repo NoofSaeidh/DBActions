@@ -11,8 +11,8 @@ namespace DBActions.CLI.Scaling
     {
         public string Text { get; set; }
         public ConsoleKey Key { get; set; }
-        public Action Action { get; set; }
-        public KeyAction(string text, ConsoleKey key, Action action, bool markText = true)
+        public Action<KeyAction> Action { get; set; }
+        public KeyAction(string text, ConsoleKey key, Action<KeyAction> action, bool markText = true)
         {
             Text = markText?text.MarkLetter(key):text;
             Action = action;

@@ -17,12 +17,8 @@ namespace DBActions.CLI
             CLIExtensions.DefaultGroundType = Highlight.GroundType;
             Config = config;
             Console.Title = Messages.Title;
-            KeyActions.ClearScreen.Action = null;
-            KeyActions.ClearScreen.Text.WriteColor();
-            Messages.Greeting.WriteColor();
-            "Put [some] text i[n] her[e]".WriteColor();
-            
-            "[] not [] wrong [  ;kashrioy384y89--------_____ ]".WriteColor();
+            var glob = CLIScales.Scale.First(x => x.Name == Names.Contexts.Global);
+            Actions.WriteActions(glob);
           }
     }
 }
