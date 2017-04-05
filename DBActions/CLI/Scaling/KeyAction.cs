@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DBActions.CLI.Hardcode;
+using DBTool.CLI.Hardcode;
 
-namespace DBActions.CLI.Scaling
+namespace DBTool.CLI.Scaling
 {
     class KeyAction
     {

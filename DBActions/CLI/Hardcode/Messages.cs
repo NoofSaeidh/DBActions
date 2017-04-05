@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBActions.CLI.Hardcode
+namespace DBTool.CLI.Hardcode
 {
     static class Messages
     {

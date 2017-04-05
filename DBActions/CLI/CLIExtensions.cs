@@ -1,11 +1,11 @@
-﻿using DBActions.CLI.Hardcode;
+﻿using DBTool.CLI.Hardcode;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBActions.CLI
+namespace DBTool.CLI
 {
     static class CLIExtensions
     {

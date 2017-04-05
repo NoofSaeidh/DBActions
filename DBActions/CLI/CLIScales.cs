@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DBActions.CLI.Scaling;
-using DBActions.CLI.Hardcode;
+using DBTool.CLI.Scaling;
+using DBTool.CLI.Hardcode;
 
-namespace DBActions.CLI
+namespace DBTool.CLI
 {
     static class CLIScales
     {

@@ -1,12 +1,12 @@
-﻿using DBActions.Configuration;
+﻿using DBTool.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DBActions.CLI.Hardcode;
+using DBTool.CLI.Hardcode;
 
-namespace DBActions.CLI
+namespace DBTool.CLI
 {
     class DBCLI
     {

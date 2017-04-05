@@ -1,11 +1,11 @@
-﻿using DBActions.CLI.Scaling;
+﻿using DBTool.CLI.Scaling;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBActions.CLI.Hardcode
+namespace DBTool.CLI.Hardcode
 {
     static class Actions
     {

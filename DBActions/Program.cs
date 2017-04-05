@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using DBActions.CLI;
-using DBActions.Configuration;
+using DBTool.CLI;
+using DBTool.Configuration;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace DBActions
+namespace DBTool
 {
     class Program
     {

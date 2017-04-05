@@ -10,7 +10,7 @@ using System.Xml.Schema;
 using System.Xml.Serialization;
 using System.Reflection;
 
-namespace DBActions.Configuration
+namespace DBTool.Configuration
 {
     [XmlInclude(typeof(XConfig))]
     [XmlRoot(Namespace = "",ElementName = "XConfig", IsNullable = false)]

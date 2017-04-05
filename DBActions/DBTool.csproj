@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5A89A1EB-FAB6-4078-B33D-1CBBDE73E9C5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DBActions</RootNamespace>
-    <AssemblyName>DBActions</AssemblyName>
+    <RootNamespace>DBTool</RootNamespace>
+    <AssemblyName>DBTool</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

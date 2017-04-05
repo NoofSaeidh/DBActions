@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBActions.CLI.Scaling
+namespace DBTool.CLI.Scaling
 {
     class Context
     {
