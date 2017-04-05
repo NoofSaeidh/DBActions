@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using DBTool.CLI;
-using DBTool.Configuration;
 using System.ComponentModel;
 using System.Reflection;
 
@@ -18,9 +17,7 @@ namespace DBTool
     {
         static void Main(string[] args)
         {
-            var pathToConfig = Environment.CurrentDirectory + "\\Configuration\\Config.xml";
-            var config = Config.ReadConfig(pathToConfig);
-            var cli = new DBCLI(config);
+
         }
     }
 }

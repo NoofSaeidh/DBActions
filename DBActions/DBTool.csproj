@@ -42,19 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CLI\CLIScales.cs" />
-    <Compile Include="CLI\DBCLI.cs" />
-    <Compile Include="CLI\CLIExtensions.cs" />
-    <Compile Include="CLI\Actions.cs" />
-    <Compile Include="CLI\Hardcode\Highlight.cs" />
-    <Compile Include="CLI\Hardcode\KeyActions.cs" />
-    <Compile Include="CLI\Scaling\Context.cs" />
-    <Compile Include="CLI\Scaling\KeyAction.cs" />
-    <Compile Include="CLI\Scaling\Scale.cs" />
-    <Compile Include="CLI\Hardcode\Messages.cs" />
-    <Compile Include="CLI\Hardcode\Names.cs" />
-    <Compile Include="Configuration\Config.cs" />
-    <Compile Include="Configuration\XConfig.cs" />
     <Compile Include="Core\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,16 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Configuration\Config.xsd">
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Configuration\Config.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
+    <Folder Include="CLI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
