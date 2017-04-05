@@ -17,7 +17,7 @@ namespace DBTool
     {
         static void Main(string[] args)
         {
-
+            var cli = new Interface(args);
         }
     }
 }
