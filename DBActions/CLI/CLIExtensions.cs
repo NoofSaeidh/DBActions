@@ -22,7 +22,7 @@ namespace DBActions.CLI
             if (type == null)
                 type = DefaultGroundType;
             if (color == null)
-                color = DefaultColor;
+                color = DefaultHighlighColor;
 
             if (type == ColorGroundType.Foreground)
             {
@@ -58,7 +58,7 @@ namespace DBActions.CLI
             if (type == null)
                 type = DefaultGroundType;
             if (color == null)
-                color = DefaultColor;
+                color = DefaultHighlighColor;
 
             if (type == ColorGroundType.Foreground)
             {
@@ -83,7 +83,7 @@ namespace DBActions.CLI
             Console.WriteLine();
         }
 
-        public static ConsoleColor DefaultColor { get; set; }
+        public static ConsoleColor DefaultHighlighColor { get; set; }
         public static ColorGroundType DefaultGroundType { get; set; }
 
 

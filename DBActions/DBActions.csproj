@@ -42,15 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CLI\CLIScales.cs" />
+    <Compile Include="CLI\CLIFlow.cs" />
     <Compile Include="CLI\DBCLI.cs" />
     <Compile Include="CLI\CLIExtensions.cs" />
     <Compile Include="CLI\Actions.cs" />
-    <Compile Include="CLI\Hardcode\Highlight.cs" />
-    <Compile Include="CLI\Hardcode\KeyActions.cs" />
+    <Compile Include="CLI\Highlight.cs" />
     <Compile Include="CLI\Scaling\Context.cs" />
     <Compile Include="CLI\Scaling\KeyAction.cs" />
-    <Compile Include="CLI\Scaling\Scale.cs" />
+    <Compile Include="CLI\Scaling\GraphContext.cs" />
     <Compile Include="CLI\Hardcode\Messages.cs" />
     <Compile Include="CLI\Hardcode\Names.cs" />
     <Compile Include="Configuration\Config.cs" />

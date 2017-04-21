@@ -11,15 +11,18 @@ namespace DBActions.CLI
     class DBCLI
     {
         public Config Config { get; private set; }
+        public CLIFlow Flow { get; private set; }
         public DBCLI(Config config)
         {
-            CLIExtensions.DefaultColor = Highlight.Color;
+            CLIExtensions.DefaultHighlighColor = Highlight.Color;
             CLIExtensions.DefaultGroundType = Highlight.GroundType;
             Config = config;
             Console.Title = Messages.Title;
-            var glob = CLIScales.Scale.First(x => x.Name == Names.Contexts.Global);
-            Actions.WriteActions(glob);
-          }
+            Flow = new CLIFlow();
+
+            //Flow
+
+        }
     }
 }
 

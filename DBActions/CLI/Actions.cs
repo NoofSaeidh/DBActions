@@ -22,7 +22,7 @@ namespace DBActions.CLI.Hardcode
         {
             var top = Console.CursorTop;
             var left = Console.CursorLeft;
-            Console.SetCursorPosition(0, Console.WindowHeight-1);
+            Console.SetCursorPosition(0, Console.WindowHeight - 1);
             foreach (var action in context.KeyActions)
             {
                 action.Text.WriteColor();
@@ -31,10 +31,17 @@ namespace DBActions.CLI.Hardcode
 
             Console.SetCursorPosition(left, top);
         }
-
-        internal static void Quit(KeyAction owner)
+        public static void Quit(KeyAction owner)
         {
             Environment.Exit(0);
+        }
+        public static void RestoreBackup(KeyAction owner)
+        {
+            throw new NotImplementedException();
+        }
+        public static void CreateBackup(KeyAction owner)
+        {
+            throw new NotImplementedException();
         }
     }
 }
